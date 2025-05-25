@@ -6,7 +6,7 @@ namespace BugPro
     public class Bug
     {
         public enum State { Created, InProgress, UnderReview, Postponed, Resolved, Reopened }
-        private enum Trigger { StartWork, Postpone, Complete, BeginReview, RestoreWork }
+        private enum Trigger { StartWork, Postpone, Complete,BeginReview, RestoreWork }
         private StateMachine<State, Trigger> sm;
 
         public Bug(State state)
